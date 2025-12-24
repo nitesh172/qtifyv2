@@ -8,6 +8,11 @@ import {
 import "./App.css"
 import Navbar from "./components/Navbar/Navbar"
 import Home from "./pages/Home"
+import {
+  ThemeProvider as MaterialThemeProvider,
+  createTheme as muiCreateTheme,
+  THEME_ID,
+} from "@mui/material"
 
 const Layout = () => {
   return (
@@ -29,10 +34,23 @@ const routes = createRoutesFromElements(
 
 const router = createBrowserRouter(routes)
 
+const materialTheme = muiCreateTheme({
+  palette: {
+    primary: {
+      main: "#34c94b",
+    },
+    secondary: {
+      main: "#121212",
+    },
+  },
+})
+
 function App() {
   return (
     <>
-      <RouterProvider router={router} />
+      <MaterialThemeProvider theme={{ [THEME_ID]: materialTheme }}>
+        <RouterProvider router={router} />
+      </MaterialThemeProvider>
     </>
   )
 }

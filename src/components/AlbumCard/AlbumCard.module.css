@@ -1,0 +1,37 @@
+.albumCard {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 160px;
+}
+
+.cardImage {
+  width: 160px;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+}
+
+.followConatiner {
+  background-color: var(--color-white);
+  padding: 6px;
+}
+
+.followChip {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.cardTitle {
+  color: var(--color-white);
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+}
