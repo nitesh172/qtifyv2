@@ -5,6 +5,8 @@
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   border: 1px solid var(--color-black);
+  background: var(--color-white);
+  color: var(--color-black);
   width: 502px;
 }
 
@@ -15,6 +17,7 @@
 }
 
 .searchButton {
+  background: var(--color-white);
   border-radius: 0px 8px 8px 0px;
   padding: 14px 20px;
   height: 100%;

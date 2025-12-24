@@ -1,8 +1,8 @@
 .button {
   background-color: var(--background-color);
-  color: #34c94b;
+  color: var(--color-primary);
   border-radius: 12px;
-  border: 1px #34c94b solid;
+  border: 1px var(--color-primary) solid;
   padding: 10px 16px;
   font-family: "Poppins";
   font-weight: 600;

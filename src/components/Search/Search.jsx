@@ -1,10 +1,10 @@
 import React from "react"
 import styles from "./Search.module.css"
-import { ReactComponent as SearchIcon } from "../../assets/search-icon.svg"
-import useAutocomplete from "@base-ui/react/autocomplete"
+import SearchIcon from "../../assets/search-icon.svg"
 import { styled } from "@mui/system"
+import { useAutocomplete } from "@mui/material"
 import { truncate } from "../../helpers/helpers"
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router"
 import { Tooltip } from "@mui/material"
 
 const Listbox = styled("ul")(({ theme }) => ({
@@ -78,7 +78,7 @@ function Search({ searchData, placeholder }) {
         </div>
         <div>
           <button className={styles.searchButton} type="submit">
-            {/* <SearchIcon /> */}
+            <img src={SearchIcon} alt="search" />
           </button>
         </div>
       </form>

@@ -3,8 +3,11 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: #ffffff;
-  background-color: #121212;
+  --color: #ffffff;
+  --background-color: #121212;
+  --color-primary: #34c94b;
+  --color-white: #ffffff;
+  --color-black: #121212;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
